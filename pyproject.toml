@@ -1,0 +1,13 @@
+# pyproject.toml
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+exclude = ".git,__pycache__,.venv"
+max-line-length = 88
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
